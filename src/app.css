@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input,
+select {
+  margin: 20px;
+  font-size: 20px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px 10px;
+  color: white;
+}
+
+input.green {
+  border: 1px solid #80CFA9;
+  color: #80CFA9;
+}
+
+select {
+  border: 1px solid #F18F01;
+  color: #F18F01;
+}
+
+/* input[type="checkbox"] {
+  display: none;
+} */
+
+label {
+  color: white;
+  cursor: pointer;
+  padding: 0 0 0 20px;
+  font-family: monospace;
+  user-select: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+input[type="checkbox"]:checked+label {
+  color: #F18F01;
+}
+
+
+.sq-bin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.sq-bin div.sq {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+
+.drill-bin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ef233c;
+}
+
+.drill-bin h2 {
+  color: #ef233c;
+  margin: 0;
+  font-weight: 100;
+}
+
+.flex-bin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.top-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-menu ul li {
+  margin: 0 10px;
+}
+
+.top-menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.top-menu ul li a:hover {
+  color: #f07167
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.pasture-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.pasture {
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 45%;
+  background-color: #20232a;
+}
+
+.pasture h2 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+.animals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cow-container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.sheep-container {
+  transition: transform 0.5s ease-in-out;
+}
